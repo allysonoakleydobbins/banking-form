@@ -1,0 +1,70 @@
+<html>
+<form action="form.html" method="POST"><br>
+  <div>
+    <fieldset>
+      <legend>Tell us about yourself</legend>
+      <label for="first-name" >Enter your first name:</label>
+      <input type="text" name="first-name" autofocus>
+      <br/>
+      <label for="middle-name">Enter your middle name:</label>
+      <input type="text" name="middle-name">
+      <br/>
+      <label for="last-name">Enter your last name:</label>
+      <input type="text" name="last-name">
+      <br/>
+      <label for="address">Enter your home address:</label>
+      <input type="text" name="address">
+      <br/>
+      <label for="employer-name">Enter employer's name:</label>
+      <input type="text" name="employer-name">
+      <br/>
+       <label for="employer-address">Enter employer's address:</label>
+      <input type="text" name="employer-address">
+      <br/>
+    </fieldset>
+    <fieldset>
+      <legend>Loan Information</legend>
+      <input name="loantype" list="loan_type">
+      <datalist id="loan_type">
+          <option value="Commercial">
+          <option value="Real estate">
+          <option value="Personal">
+          <option value="Mortgage">
+      </datalist><br>
+          <label for="loan-amount">Loan amount:</label><br>
+        <input type="text" name="loan-amount">
+      <br/>
+    </fieldset>
+    <fieldset>
+        <legend>Loan length</legend>
+        <input type="radio" name="product-type" value="5 years"> 5 years
+        <input type="radio" name="product-type" value="15 years"> 15 years
+        <input type="radio" name="product-type" value="powerpoint"> 30 years
+    </fieldset>
+    <fieldset>
+      <legend>What type of customer are you?</legend>
+
+      <input type="checkbox" name="ihaveadownpayment" value="ihaveadownpayment"> I have a down payment
+      <input type="checkbox" name="outofstate" value="outofstate"> Out-of-state resident
+      <input type="checkbox" name="married" value="married"> Married
+      <input type="checkbox" name="loanwillbecosigned" value="loanwillbecosigned"> Loan will be co-signed
+    </fieldset>
+    <fieldset>
+      <legend>Give us feedback</legend>
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments"></textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Getting to know you</legend>
+      <label for="email-address">Enter your email address</label>
+      <input type="email" name="email" placeholder="you@somewhere.com">
+      <br/>
+      <label for="telephone">Enter your mobile number</label>
+      <input type="tel" name="telephone" placeholder="888-867-5309"><br>
+      <label for="linkedin">LinkedIn</label>
+      <input type="url" name="linkedin" placeholder="www.linkedin.com">
+      <br/>
+    </fieldset>
+  </div>
+</form>
+</html>
